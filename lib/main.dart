@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:getx_demo/screens/first_screen.dart';
+import 'package:getx_demo/app/routes.dart';
+import 'package:getx_demo/splash_screen.dart';
+
 
 
 
@@ -14,7 +16,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: FirstPage(),
+      home: SplashScreen(),
+      // initialRoute: '/home',
+      // getPages: appRoutes(),
       debugShowCheckedModeBanner: false,
     );
   }
